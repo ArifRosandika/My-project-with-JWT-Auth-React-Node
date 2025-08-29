@@ -1,22 +1,22 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Login from './Components/Login.jsx';
 import Register from './Components/Register.jsx';
-import Dashboard from './Components/Dashboard.jsx';
-import Navbar from './Components/Navbar.jsx';
+import Dashboard from './Pages/Dashboard.jsx';
+import Bg from './Pages/Backround.jsx';
+
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [ count, setCount ] = useState(0);
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-      </Routes>
+        <Routes>
+          <Route path='/Login' element={<Bg><Login /></Bg>} />
+          <Route path='/Register' element={<Bg><Register /></Bg>} />
+          <Route path='/Dashboard' element={<Bg><Dashboard /></Bg>} />
+        </Routes>
     </BrowserRouter>
-  );
-};
+  )
+}
 
 export default App;
