@@ -28,6 +28,8 @@ This project demonstrates how to implement access tokens, refresh tokens, interc
 
 ⚛️ React (Hooks, useState, useEffect, react-router-dom)
 
+🌬️ Tailwind(Use Tailwind for styling)
+
 📡 Axios (API requests + interceptors)
 
 > BACKEND
@@ -58,7 +60,7 @@ jwt-auth-app/
 ├── frontend/              # React Frontend
 │   ├── src/
 │   │   ├── components/    # UI Components
-│   │   ├── pages/         # Login, Dashboard, Register, Navbar
+│   │   ├── pages/         # Login, Dashboard, Register,
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   └── package.json
